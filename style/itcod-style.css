@@ -1051,14 +1051,6 @@ html{
   width: 33.333333%;
 }
 
-.w-8{
-  width: 2rem;
-}
-
-.w-auto{
-  width: auto;
-}
-
 .flex-shrink{
   flex-shrink: 1;
 }
@@ -2710,6 +2702,14 @@ html{
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\]{
   --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
+}
+
+.header-back{
+  background: url("../Images/CoursalBackGround.svg");
+  background-repeat: no-repeat;
+  background-size: 70% ;
+  background-position: left 0 top  101%;
+  /* height: 650px; */
 }
 
 .hover\:font-bold:hover{
