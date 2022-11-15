@@ -5,7 +5,7 @@ module.exports = {
     './source/**/*.{html,js}'
   ],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'class', // or 'class'
   theme: {
     screens: {
       sm: '640px',
