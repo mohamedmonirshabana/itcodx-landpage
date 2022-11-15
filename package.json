@@ -1,0 +1,20 @@
+{
+  "name": "ItCodx-LandPage",
+  "version": "1.0.0",
+  "description": "ItCodx LandPage for ItCodx WebSite ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx tailwindcss -i ./source/input.css -o ./style/itcod-style.css --watch",
+    "build": "npx tailwindcss -i ./source/input.css -o ./style/itcod-style.css",
+    "localserver":"npx lite-server"
+  },
+  "keywords": [],
+  "author": "itCodx-Team",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

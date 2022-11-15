@@ -1,0 +1,13 @@
+.header-back{
+    background: url("../Images/CoursalBackGround.svg");
+    background-repeat: no-repeat;
+    background-size: 70% ;
+    background-position: left 0 top  101%;
+    /* height: 650px; */
+}
+
+.myBackground{
+    background: url("../Images/teamworkback.svg");
+    background-repeat: no-repeat;
+    
+}
