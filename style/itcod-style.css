@@ -2788,10 +2788,8 @@ html{
   }
 }
 
-@media (prefers-color-scheme: dark){
-  @media (min-width: 1024px){
-    .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
-      paint-order: markers;
-    }
+@media (min-width: 1024px){
+  .dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
+    paint-order: markers;
   }
 }
