@@ -2816,6 +2816,11 @@ html{
 }
 
 @media (min-width: 768px){
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:columns-3{
     -moz-columns: 3;
          columns: 3;
@@ -2823,6 +2828,10 @@ html{
 }
 
 @media (min-width: 1024px){
+  .lg\:invisible{
+    visibility: hidden;
+  }
+
   .dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
     paint-order: markers;
   }
