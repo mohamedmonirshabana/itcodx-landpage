@@ -2020,6 +2020,10 @@ html{
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'Image\/CoursalBackGround\.svg\'\)\]{
+  background-image: url('Image/CoursalBackGround.svg');
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2038,6 +2042,10 @@ html{
 .box-decoration-clone{
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-cover{
+  background-size: cover;
 }
 
 .bg-fixed{
@@ -2067,6 +2075,10 @@ html{
 .bg-clip-text{
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-left{
+  background-position: left;
 }
 
 .bg-repeat{
