@@ -703,6 +703,11 @@ html{
   clear: none;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -745,6 +750,10 @@ html{
 
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
 }
 
 .mt-5{
@@ -1938,14 +1947,14 @@ html{
   border-style: none;
 }
 
-.border-gray-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
-}
-
 .border-black{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-gray-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .bg-white{
@@ -2708,8 +2717,8 @@ html{
   background: url("../Images/CoursalBackGround.svg");
   background-repeat: no-repeat;
   background-size: 70% ;
-  background-position: left 0 top  101%;
-  /* height: 650px; */
+  background-position: left 0;
+  height: 564px;
 }
 
 .hover\:font-bold:hover{

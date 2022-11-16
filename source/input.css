@@ -14,8 +14,8 @@
     background: url("../Images/CoursalBackGround.svg");
     background-repeat: no-repeat;
     background-size: 70% ;
-    background-position: left 0 top  101%;
-    /* height: 650px; */
+    background-position: left 0;
+    height: 564px;
 }
 
 .myBackground{
