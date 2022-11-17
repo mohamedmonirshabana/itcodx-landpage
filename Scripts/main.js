@@ -1,11 +1,14 @@
 const menuButton = document.querySelector('.menu-btn');
+const mymenu = document.querySelector('.menu-container');
 let menuOpen = false;
 menuButton.addEventListener('click', () => { 
     if (!menuOpen){
         menuButton.classList.add('open');
+        mymenu.classList.add('active');
         menuOpen = true;
     } else {
         menuButton.classList.remove('open');
+        mymenu.classList.remove('active');
         menuOpen = false;
     }
 });

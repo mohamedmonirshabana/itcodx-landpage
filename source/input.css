@@ -79,5 +79,25 @@
     transform:  rotate(-45deg) translate(35px, 35px);
 }
 
+.menu-container{
+    margin: auto 0 ;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+    transition: all .8s ease-in-out;
+}
+.menu-container li{
+    display: inline-block;
+    margin: -20px;
+    opacity: 0;
+    
+}
+.active.menu-container li{
+    display: inline-block;
+    margin: 0 16px;
+    opacity: 100%;
+    transform: scaleX(385px);
+}
+
 
 }
