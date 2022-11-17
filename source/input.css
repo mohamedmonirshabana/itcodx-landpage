@@ -23,4 +23,14 @@
     background-repeat: no-repeat;
     
 }
+
+.menu{
+    margin:0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
 }

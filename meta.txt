@@ -1,0 +1,11 @@
+<meta property="og:title" content="Index Group">
+	<meta property="og:description" content="We plan to create stories and issues and solve it in the way that fits your organization the most .And discuss our work in full context with complete visibility, Shape with confidence knowing the technology you have is always up to date.">
+	<meta property="og:image" content="app-assets/imgs/index-spinner.gif">
+	<meta property="og:url" content="https://indexgroup.net/">
+
+	<!-- Twitter meta -->
+
+	<meta name="twitter:title" content="Index Group">
+	<meta name="twitter:description" content="We plan to create stories and issues and solve it in the way that fits your organization the most .And discuss our work in full context with complete visibility, Shape with confidence knowing the technology you have is always up to date.">
+	<meta name="twitter:image" content="app-assets/imgs/index-spinner.gif">
+	<meta name="twitter:card" content="summary_large_image">
