@@ -2091,10 +2091,6 @@ html{
   background-origin: content-box;
 }
 
-.fill-slate-900{
-  fill: #0f172a;
-}
-
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
@@ -2729,12 +2725,61 @@ html{
   height: 564px;
 }
 
-.menu{
-  margin:0;
-  padding: 0;
-  width: 0;
-  overflow: hidden;
-  transition: 0.5s;
+.menu-btn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger{
+  width: 30px;
+  height: 4px;
+  background: #000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after{
+  content: '';
+  position: absolute;
+  height: 4px;
+  background: #000;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before{
+  width: 35px;
+  transform: translateY(-10px) translateX(-21px);
+}
+
+.menu-btn__burger::after{
+  width: 25px;
+  transform: translateY(10px) translateX(-10px);
+}
+
+.menu-btn.open .menu-btn__burger{
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before{
+  width: 30px;
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after{
+  width: 30px;
+  transform:  rotate(-45deg) translate(35px, 35px);
 }
 
 .hover\:font-bold:hover{

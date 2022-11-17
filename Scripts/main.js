@@ -1,10 +1,14 @@
-const menubutton = document.querySelector("#menubutton");
-const svg1 = document.querySelector('#Capa_1');
-const svg2 = document.querySelector("#Capa_2");
-menubutton.addEventListener('click', () => {
-    svg1.classList.toggle("hidden");
-    svg2.classList.toggle("hidden");
-})
+const menuButton = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuButton.addEventListener('click', () => { 
+    if (!menuOpen){
+        menuButton.classList.add('open');
+        menuOpen = true;
+    } else {
+        menuButton.classList.remove('open');
+        menuOpen = false;
+    }
+});
 
 
 
