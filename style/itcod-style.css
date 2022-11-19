@@ -775,10 +775,6 @@ html{
   margin-top: 1.5rem;
 }
 
-.mt-auto{
-  margin-top: auto;
-}
-
 .ml-3{
   margin-left: 0.75rem;
 }
@@ -813,6 +809,10 @@ html{
 
 .mr-11{
   margin-right: 2.75rem;
+}
+
+.mt-auto{
+  margin-top: auto;
 }
 
 .box-border{
@@ -959,6 +959,10 @@ html{
   height: 3.813rem;
 }
 
+.h-34{
+  height:  34.5rem;
+}
+
 .h-auto{
   height: auto;
 }
@@ -989,14 +993,6 @@ html{
 
 .h-9{
   height: 2.25rem;
-}
-
-.h-34{
-  height:  34.5rem;
-}
-
-.h-32{
-  height: 8rem;
 }
 
 .w-10{
