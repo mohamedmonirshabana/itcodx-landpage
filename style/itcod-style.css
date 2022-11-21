@@ -2860,6 +2860,15 @@ html{
   background-color: #0ae;
 }
 
+.serviceSlid{
+  transition: all 0.5s ease-in-out
+}
+
+.serviceSlid.show{
+  /* display: block; */
+  transform: rotateX('angle');
+}
+
 .hover\:bg-primbackground:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(70 205 226 / var(--tw-bg-opacity));

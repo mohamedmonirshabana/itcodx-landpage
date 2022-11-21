@@ -1,6 +1,8 @@
 const menuButton = document.querySelector('.menu-btn');
 const mymenu = document.querySelector('.menu-container');
 let menuOpen = false;
+const servicebuttons = document.querySelectorAll("#serviceButtons div");
+const servicecontain = document.querySelectorAll('.mySliders>div');
 menuButton.addEventListener('click', () => { 
     if (!menuOpen){
         menuButton.classList.add('open');
@@ -13,7 +15,23 @@ menuButton.addEventListener('click', () => {
     }
 });
 
+servicebuttons.forEach(button => {
+    button.addEventListener('click', () => {
+        hideAll();
+        const slide = button.dataset.subfor;
+        console.log(slide);
+        const panel = document.querySelector("#" + slide);
+        console.log(panel);
+        panel.classList.remove("hidden");
+        
+     });
+});
 
+function hideAll() {
+    servicecontain.forEach(slide => { 
+        slide.classList.add("hidden");
+    });
+}
 
 
 function animate(elem,style,unit,from,to,time) {

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="Images/itCodx-Group.svg" type="image/x-icon">
   <link href="style/itcod-style.css" rel="stylesheet">
-  <link
+  <!-- <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+/> -->
 </head>
 <body class="bg-white">
  <header class=" header-back px-10 mb-6 ">
@@ -69,32 +69,98 @@
  <!-- Service -->
  <section class="mb-6  h-687  px-10">
     <div class="w-full mt-4 flex flex-col h-80">
+        <!-- Title section -->
         <div class="w-full h-10">
             <h1 class="text-center underline text-4xl">Service</h1>
         </div>
+        <!-- Slider and Menu -->
         <div class=" w-full mt-3 flex flex-row py-5 ">
+            <!-- Menu -->
             <div class="scrollbar w-52" id="style-1">
-                <div class="force-overflow flex flex-col">
-                    <div class=" border rounded-lg w-32 h-28 shadow-lg my-5 bg-white hover:bg-primbackground outline-1 hover:outline-slate-600 cursor-pointer">
-                     <img alt="Mobile App" src="Images/mobile-phone-svgrepo-com.svg" class="h-15 mx-auto my-6"/>
-                </div>
-                <div class=" border rounded-lg w-32 h-28 shadow-lg my-5 bg-white hover:bg-primbackground outline-1 hover:outline-slate-600 cursor-pointer">
-                     <img alt="Mobile App" src="Images/laptop-svgrepo-com.svg" class="h-15 mx-auto my-6 "/>
-                </div>
-                 <div class=" border rounded-lg w-32 h-28 shadow-lg my-5 bg-white hover:bg-primbackground outline-1 hover:outline-slate-600 cursor-pointer">
-                     <img alt="Mobile App" src="Images/design-svgrepo-com.svg" class="h-15 mx-auto my-6 "/>
-                </div>
-                <div class=" border rounded-lg w-32 h-28 shadow-lg my-5 bg-white hover:bg-primbackground outline-1 hover:outline-slate-600 cursor-pointer">
-                     <img alt="Mobile App" src="Images/blog-blogger-bloglovin-svgrepo-com.svg" class="h-15 mx-auto my-6 "/>
-                </div>
+                <div class="force-overflow flex flex-col" id="serviceButtons">
+                    <div class=" border rounded-lg w-32 h-28 shadow-lg my-5 bg-white hover:bg-primbackground outline-1 hover:outline-slate-600 cursor-pointer" data-subfor="MobileService">
+                        <img alt="Mobile App" src="Images/mobile-phone-svgrepo-com.svg" class="h-15 mx-auto my-6"/>
+                    </div>
+                    <div class=" border rounded-lg w-32 h-28 shadow-lg my-5 bg-white hover:bg-primbackground outline-1 hover:outline-slate-600 cursor-pointer" data-subfor="WebApp">
+                        <img alt="Mobile App" src="Images/laptop-svgrepo-com.svg" class="h-15 mx-auto my-6 "/>
+                    </div>
+                    <div class=" border rounded-lg w-32 h-28 shadow-lg my-5 bg-white hover:bg-primbackground outline-1 hover:outline-slate-600 cursor-pointer" data-subfor="GraphicDesign">
+                        <img alt="Mobile App" src="Images/design-svgrepo-com.svg" class="h-15 mx-auto my-6 "/>
+                    </div>
+                    <div class=" border rounded-lg w-32 h-28 shadow-lg my-5 bg-white hover:bg-primbackground outline-1 hover:outline-slate-600 cursor-pointer" data-subfor="Blog">
+                        <img alt="Mobile App" src="Images/blog-blogger-bloglovin-svgrepo-com.svg" class="h-15 mx-auto my-6 "/>
+                    </div>
                 </div>
             </div>
-            <!--  34.5rem -->
-            <div class="w-full flex flex-col pl-3 shadow-md rounded-md h-34">
-                <div>
+            <!--  Slider -->
+            <div class="w-full flex flex-col pl-3 shadow-md rounded-md h-34 mySliders" >
+                <div id="MobileService" data-service-active class="serviceSlid ">
                     <div class="mt-5">
                         <h1 class="text-3xl font-semibold">Explore our</h1>
                         <h2 class="text-3xl text-primbackground underline font-semibold mt-3" >Mobile App</h2>
+                    </div>
+                    <div class="mt-6 flex  h-full ">
+                        <div class="text-left mx-10 font-semibold w-1/2">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus corporis sit veniam deleniti. 
+                                Aut repudiandae officiis assumenda eveniet provident veniam et temporibus quia, labore maxime aperiam aliquid 
+                                architecto amet!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus corporis sit veniam deleniti. 
+                                Aut repudiandae officiis assumenda eveniet provident veniam et temporibus quia, labore maxime aperiam aliquid 
+                                architecto amet!
+                            </p>
+                        </div>
+                        <div class="self-end items-end mt-2 h-auto w-1/2">
+                            <img alt="Mobile Service" src="Images/Service-photo.svg"  class="h-60"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="WebApp" data-service-active class="hidden">
+                    <div class="mt-5">
+                        <h1 class="text-3xl font-semibold">Explore our</h1>
+                        <h2 class="text-3xl text-primbackground underline font-semibold mt-3" >Web App</h2>
+                    </div>
+                    <div class="mt-6 flex  h-full ">
+                        <div class="text-left mx-10 font-semibold w-1/2">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus corporis sit veniam deleniti. 
+                                Aut repudiandae officiis assumenda eveniet provident veniam et temporibus quia, labore maxime aperiam aliquid 
+                                architecto amet!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus corporis sit veniam deleniti. 
+                                Aut repudiandae officiis assumenda eveniet provident veniam et temporibus quia, labore maxime aperiam aliquid 
+                                architecto amet!
+                            </p>
+                        </div>
+                        <div class="self-end items-end mt-2 h-auto w-1/2">
+                            <img alt="Mobile Service" src="Images/Service-photo.svg"  class="h-60"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="GraphicDesign" data-service-active class="hidden">
+                    <div class="mt-5">
+                        <h1 class="text-3xl font-semibold">Explore our</h1>
+                        <h2 class="text-3xl text-primbackground underline font-semibold mt-3" >Graphic Design</h2>
+                    </div>
+                    <div class="mt-6 flex  h-full ">
+                        <div class="text-left mx-10 font-semibold w-1/2">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus corporis sit veniam deleniti. 
+                                Aut repudiandae officiis assumenda eveniet provident veniam et temporibus quia, labore maxime aperiam aliquid 
+                                architecto amet!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus corporis sit veniam deleniti. 
+                                Aut repudiandae officiis assumenda eveniet provident veniam et temporibus quia, labore maxime aperiam aliquid 
+                                architecto amet!
+                            </p>
+                        </div>
+                        <div class="self-end items-end mt-2 h-auto w-1/2">
+                            <img alt="Mobile Service" src="Images/Service-photo.svg"  class="h-60"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="Blog" data-service-active class="hidden">
+                    <div class="mt-5">
+                        <h1 class="text-3xl font-semibold">Explore our</h1>
+                        <h2 class="text-3xl text-primbackground underline font-semibold mt-3" >Blog</h2>
                     </div>
                     <div class="mt-6 flex  h-full ">
                         <div class="text-left mx-10 font-semibold w-1/2">
@@ -333,7 +399,7 @@
     <h1 class="text-center">Copyright &copy; ITCodx-Team 2023</h1>
  </footer>
  <script src="Scripts/main.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
   </div>
 </body>
 </html>
