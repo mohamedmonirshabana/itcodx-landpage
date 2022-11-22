@@ -22,14 +22,15 @@ servicebuttons.forEach(button => {
         console.log(slide);
         const panel = document.querySelector("#" + slide);
         console.log(panel);
-        panel.classList.remove("hidden");
+        panel.classList.remove("hide");
+        panel.classList.add("show");
         
      });
 });
 
 function hideAll() {
     servicecontain.forEach(slide => { 
-        slide.classList.add("hidden");
+        slide.classList.add("hide");
     });
 }
 

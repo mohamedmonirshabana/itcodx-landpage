@@ -7,6 +7,9 @@
     html{
         font-family: 'Lato', sans-serif;
     }
+    body{
+        overflow-x: hidden;
+    }
 }
 
 @layer utilities{
@@ -133,12 +136,23 @@
 
 }
 .serviceSlid{
-    transition: all 0.5s ease-in-out
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    /* transform:translate(100%); */
+    /* width: 20%; */
+    /* opacity: 0; */
 }
 
 .serviceSlid.show{
     /* display: block; */
-    transform: rotateX(45deg);
+    transform: translate(0);
+    opacity: 1;
+    /* transform: ; */
+}
+.serviceSlid.hide{
+    transform:translate(100%);
+    /* width: 20%; */
+    opacity: 0;
 }
 
 
