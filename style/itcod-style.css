@@ -655,6 +655,18 @@ body{
   left: -0.25rem;
 }
 
+.top-auto{
+  top: auto;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.left-2{
+  left: 0.5rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -665,6 +677,14 @@ body{
 
 .z-10{
   z-index: 10;
+}
+
+.z-40{
+  z-index: 40;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .z-0{
@@ -781,6 +801,10 @@ body{
 
 .mt-15{
   margin-top: 3.813rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .-mt-17{
@@ -1978,6 +2002,11 @@ body{
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
+.bg-slate-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -2179,6 +2208,10 @@ body{
   padding-left: 0.5rem;
 }
 
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2255,8 +2288,17 @@ body{
   line-height: 1.5rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-semibold{
   font-weight: 600;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .font-bold{
@@ -2404,6 +2446,10 @@ body{
 .subpixel-antialiased{
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.opacity-0{
+  opacity: 0;
 }
 
 .bg-blend-normal{
@@ -2862,6 +2908,29 @@ body{
   transform:translate(100%);
   /* width: 20%; */
   opacity: 0;
+}
+
+.teamWorkBackGround{
+  background: url("../Images/teamworkback.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+  height: 535px;
+  /* z-index: 0; */
+  /* position: relative; */
+  top:-20px;
+}
+
+.graystyle{
+  filter: grayscale(100%);
+}
+
+.card_Coverimage{
+  bottom: 208px;
+}
+
+.card_Definitation{
+  bottom: 398px;
 }
 
 .hover\:bg-primbackground:hover{

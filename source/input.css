@@ -155,5 +155,38 @@
     opacity: 0;
 }
 
+.teamWorkBackGround{
+    background: url("../Images/teamworkback.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+    height: 535px;
+    /* z-index: 0; */
+    /* position: relative; */
+    top:-20px;
+}
+
+.graystyle{
+    filter: grayscale(100%);
+}
+
+.back_for_team{
+    position: relative;
+    z-index: 10;
+    top: -239.2px;
+    left:-9px;
+}
+
+.card-back_image{
+    width: 100px !important ;
+}
+
+.card_Coverimage{
+    bottom: 208px;
+}
+.card_Definitation{
+    bottom: 398px;
+}
+
 
 }

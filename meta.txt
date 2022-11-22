@@ -52,3 +52,21 @@
                 <div><img src="Images/team_1_without.png" alt="Team_1" class="mt-15 relative"></div>
                 <div><img src="Images/team_1_without.png" alt="Team_1" class="mt-15 relative"></div>
             </div>   
+
+
+
+      <div class="w-1/3 px-2">
+                        <img src="Images/team_1_color.png" alt="Team" class="z-40 relative" />
+                        <div class="back_for_team">
+                            <img src="Images/team_back.png" alt="" class="card-back_image" />
+                        </div>
+                        <div class="z-20">
+
+                        </div>
+                    </div>
+                    <div class="w-1/3">
+                        <img src="Images/team_1_color.png" class="graystyle"/>
+                    </div>
+                    <div class="w-1/3">
+                        <img src="Images/team_1_color.png" class="graystyle"/>
+                    </div>      
