@@ -663,14 +663,6 @@ html{
   z-index: 10;
 }
 
-.z-40{
-  z-index: 40;
-}
-
-.z-20{
-  z-index: 20;
-}
-
 .z-0{
   z-index: 0;
 }
@@ -785,14 +777,6 @@ html{
 
 .mt-15{
   margin-top: 3.813rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
-}
-
-.-mt-1{
-  margin-top: -0.25rem;
 }
 
 .-mt-17{
@@ -2267,11 +2251,6 @@ html{
   line-height: 1.5rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-semibold{
   font-weight: 600;
 }
@@ -2866,7 +2845,7 @@ html{
 
 .serviceSlid.show{
   /* display: block; */
-  transform: rotateX('angle');
+  transform: rotateX(45deg);
 }
 
 .hover\:bg-primbackground:hover{

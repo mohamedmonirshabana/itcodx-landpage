@@ -138,7 +138,7 @@
 
 .serviceSlid.show{
     /* display: block; */
-    transform: rotateX('angle');
+    transform: rotateX(45deg);
 }
 
 

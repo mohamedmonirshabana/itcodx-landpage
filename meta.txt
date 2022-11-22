@@ -24,3 +24,31 @@
                 <svg class="h-8 hidden" viewBox="0 0 512 512" id="Capa_2" xmlns="http://www.w3.org/2000/svg">
                      <polygon fill="var(--ci-primary-color, currentColor)" points="427.314 107.313 404.686 84.687 256 233.373 107.314 84.687 84.686 107.313 233.373 256 84.686 404.687 107.314 427.313 256 278.627 404.686 427.313 427.314 404.687 278.627 256 427.314 107.313" class="ci-primary"/>
                 </svg>
+
+
+
+<div class="flex flex-row z-10 mt-5 px-10">
+                <div class="flex flex-col h-12 mx-10">
+                    <img src="Images/team_1_color.png" alt="" class="absolute z-40" style="margin-top:-69px; margin-left: 29px;">
+                    <div class=" z-10 mt-16  ">
+                            <div class="z-20 relative mt-3">
+                                <img alt="back" src="Images/team_back.png" class="  " />
+                                <div class="bg-greenBackground text-black px-3 py-2 -mt-1 relative ">
+                                    <div class="text-center">
+                                        <h1 class="font-bold text-lg">Mohamed Shabana</h1>
+                                        <h2 class="font-semibold">Full Stack</h2>
+                                        <p>"I Work full stack Because I Love it"</p>
+                                        <div class="flex justify-center mt-3">
+                                            <a href="#" class="mx-3"><img alt="facebook" src="Images/facebook_black.svg"  /></a>
+                                            <a href="#" class="mx-3"><img alt="instagram" src="Images/inastagram.svg" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div><img src="Images/team_1_without.png" alt="Team_1" class="mt-15 relative"></div>
+                <div><img src="Images/team_1_without.png" alt="Team_1" class="mt-15 relative"></div>
+            </div>   
