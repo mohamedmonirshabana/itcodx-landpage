@@ -3,6 +3,42 @@ const mymenu = document.querySelector('.menu-container');
 let menuOpen = false;
 const servicebuttons = document.querySelectorAll("#serviceButtons div");
 const servicecontain = document.querySelectorAll('.mySliders>div');
+//-----------------
+const teamImagePhotos = document.querySelectorAll(".TeamCV");
+console.log(teamImagePhotos);
+let imgShow = false;
+teamImagePhotos.forEach(imgbutton => {
+    imgbutton.addEventListener('click', () => {
+        const TeamId = imgbutton.dataset.tid;
+        console.log(TeamId);
+        if (imgbutton.classList.contains("grayscale")) {
+            imgbutton.classList.remove("grayscale");
+            imgbutton.classList.remove("bottom-0");
+            imgbutton.classList.add("bottom-32");
+            const btnBackimage = document.querySelector("#" + TeamId + ">div>.backImg>img");
+            const imgCount = document.querySelector("#" + TeamId + ">div>.backImg");
+            btnBackimage.classList.remove("bottom-0");
+            btnBackimage.classList.add("bottom-32");
+            imgCount.classList.remove("opacity-0");
+            const tit = document.querySelector("#" + TeamId + ">div>.TitDiv");
+            tit.classList.remove("opacity-0");
+        } else {
+            imgbutton.classList.add("grayscale");
+            imgbutton.classList.remove("bottom-32");
+            imgbutton.classList.add("bottom-0");
+            const btnBackimage = document.querySelector("#" + TeamId + ">div>.backImg>img");
+            const imgCount = document.querySelector("#" + TeamId + ">div>.backImg");
+            btnBackimage.classList.remove("bottom-32");
+            btnBackimage.classList.add("bottom-0");
+            imgCount.classList.add("opacity-0");
+            const tit = document.querySelector("#" + TeamId + ">div>.TitDiv");
+            tit.classList.add("opacity-0");
+        }
+        
+    });
+});
+
+
 menuButton.addEventListener('click', () => { 
     if (!menuOpen){
         menuButton.classList.add('open');
