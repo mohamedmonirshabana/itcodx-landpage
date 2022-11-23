@@ -5,8 +5,8 @@ const servicebuttons = document.querySelectorAll("#serviceButtons div");
 const servicecontain = document.querySelectorAll('.mySliders>div');
 //-----------------
 const teamImagePhotos = document.querySelectorAll(".TeamCV");
-console.log(teamImagePhotos);
-let imgShow = false;
+// console.log(teamImagePhotos);
+// let imgShow = false;
 teamImagePhotos.forEach(imgbutton => {
     imgbutton.addEventListener('click', () => {
         const TeamId = imgbutton.dataset.tid;
@@ -34,7 +34,6 @@ teamImagePhotos.forEach(imgbutton => {
             const tit = document.querySelector("#" + TeamId + ">div>.TitDiv");
             tit.classList.add("opacity-0");
         }
-        
     });
 });
 
@@ -70,6 +69,23 @@ function hideAll() {
     });
 }
 
+function hideAllTeam() {
+    teamImagePhotos.forEach(imgbutton => {
+        const TeamId = imgbutton.dataset.tid;
+        if (imgbutton.classList.contains("grayscale")) {
+            imgbutton.classList.remove("grayscale");
+            imgbutton.classList.remove("bottom-0");
+            imgbutton.classList.add("bottom-32");
+            const btnBackimage = document.querySelector("#" + TeamId + ">div>.backImg>img");
+            const imgCount = document.querySelector("#" + TeamId + ">div>.backImg");
+            btnBackimage.classList.remove("bottom-0");
+            btnBackimage.classList.add("bottom-32");
+            imgCount.classList.remove("opacity-0");
+            const tit = document.querySelector("#" + TeamId + ">div>.TitDiv");
+            tit.classList.remove("opacity-0");
+        } 
+});
+}
 
 function animate(elem,style,unit,from,to,time) {
     if( !elem) return;
