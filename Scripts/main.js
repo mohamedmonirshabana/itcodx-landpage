@@ -54,19 +54,29 @@ servicebuttons.forEach(button => {
     button.addEventListener('click', () => {
         hideAll();
         const slide = button.dataset.subfor;
-        console.log(slide);
+        // console.log(slide);
+        console.log(button);
+        hideHover();
+        button.classList.add("bg-primbackground");
         const panel = document.querySelector("#" + slide);
-        console.log(panel);
+        // console.log(panel);
         panel.classList.remove("hide");
         panel.classList.add("show");
-        
      });
 });
 
 function hideAll() {
     servicecontain.forEach(slide => { 
         slide.classList.add("hide");
+        
     });
+}
+
+function hideHover()
+{
+    servicebuttons.forEach(slide => {
+        slide.classList.remove("bg-primbackground");
+     });
 }
 
 function hideAllTeam() {
